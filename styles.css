@@ -207,3 +207,9 @@ a.store[href]:hover img{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,
 
 /* telegram icon: keep the .tg pill style off the svg icon */
 svg.tg{padding:0;margin-inline-start:0;border-radius:0;font-size:inherit}
+
+/* Facebook (2026-10-26) */
+.btn-fb{background:#1877F2;color:#fff;box-shadow:0 6px 18px rgba(24,119,242,.35)}
+.btn-fb:hover{box-shadow:0 10px 24px rgba(24,119,242,.45)}
+.btn .fb{width:22px;height:22px}
+.foot .fb{width:20px;height:20px;color:#1877F2;background:#fff;border-radius:50%}
