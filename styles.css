@@ -180,10 +180,30 @@ details p{margin:0 0 14px;color:var(--mut)}
 .tg-beta{background:#FFE9B5;color:#8A4B00}
 .soon-note{text-align:center;color:var(--mut);font-size:14px;margin:22px 0 0}
 
-/* store buttons (activate per store by removing [hidden]) */
-.store-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.store-row:not(:has(a:not([hidden]))){display:none}
-.btn-store{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3);box-shadow:none;font-size:.95rem}
-.btn-store:hover{background:rgba(255,255,255,.2)}
-.btn-store svg{width:20px;height:20px;margin-inline-end:8px;vertical-align:-4px}
-.btn-store[hidden]{display:none!important}
+/* link to /download (homepage) */
+.all-dl{display:inline-flex;align-items:center;gap:6px;margin:6px 0 2px;color:var(--gold2);font-weight:700;font-size:16px;text-decoration:none;border-bottom:1px solid rgba(255,217,120,.45);padding-bottom:2px}
+.all-dl:hover{color:#fff;border-color:#fff}
+
+/* /download page */
+.dlp{padding:40px 0 56px}
+.dlp-in{max-width:760px;text-align:center}
+.dlp h1{font-size:clamp(34px,9vw,52px);font-weight:800;margin:14px 0 8px}
+.dlp .lead{margin:0 auto 22px}
+.dlp .btn-apk{width:100%;max-width:420px}
+.dlp .dl-note{margin-top:10px}
+.dlp h2{font-size:21px;font-weight:800;margin:36px 0 16px;color:#fff}
+.stores{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px 14px;justify-items:center;margin:0 auto;max-width:480px}
+.store{display:inline-flex;flex-direction:column;align-items:center;gap:7px;border-radius:12px;text-decoration:none}
+.store img{height:56px;width:auto;max-width:100%;border-radius:10px}
+a.store[href]:hover img{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.store img{transition:transform .15s,box-shadow .15s}
+.store .soon-pill{display:none}
+.store.is-soon{cursor:default}
+.store.is-soon img{opacity:.45;filter:grayscale(.6)}
+.store.is-soon .soon-pill{display:inline-block;background:rgba(242,179,61,.16);color:var(--gold2);border:1px solid rgba(242,179,61,.45);font-size:13px;font-weight:800;line-height:1;padding:5px 12px;border-radius:999px}
+.stores-note{font-size:14px;color:rgba(255,255,255,.65);margin:14px 0 0}
+.dlp .cta-row{justify-content:center;margin-top:10px}
+.dlp .home-link{display:inline-block;margin-top:26px;color:rgba(255,255,255,.8);font-weight:700}
+
+/* telegram icon: keep the .tg pill style off the svg icon */
+svg.tg{padding:0;margin-inline-start:0;border-radius:0;font-size:inherit}
