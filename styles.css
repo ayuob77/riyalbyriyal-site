@@ -179,3 +179,11 @@ details p{margin:0 0 14px;color:var(--mut)}
 .tg-free{background:var(--g1);color:var(--g8)}
 .tg-beta{background:#FFE9B5;color:#8A4B00}
 .soon-note{text-align:center;color:var(--mut);font-size:14px;margin:22px 0 0}
+
+/* store buttons (activate per store by removing [hidden]) */
+.store-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.store-row:not(:has(a:not([hidden]))){display:none}
+.btn-store{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3);box-shadow:none;font-size:.95rem}
+.btn-store:hover{background:rgba(255,255,255,.2)}
+.btn-store svg{width:20px;height:20px;margin-inline-end:8px;vertical-align:-4px}
+.btn-store[hidden]{display:none!important}
