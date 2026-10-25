@@ -4,6 +4,7 @@
 
 هذا المستودع فيه الموقع التعريفي لتطبيق «ريال بريال» لتسجيل المصاريف والميزانية، مع أزرار تحميل التطبيق للأندرويد.
 
+- العنوان الرسمي: https://riyalbyriyal.app (و www يفتح نفس الموقع).
 - الموقع ملفات ثابتة (HTML و CSS) بدون أي خطوة بناء.
 - يُنشر تلقائياً على Cloudflare Pages: أي تعديل يُرفع على الفرع `main` يظهر على الموقع خلال دقيقة أو دقيقتين.
 - الصفحة الرئيسية: `index.html` — سياسة الخصوصية: `privacy/index.html`.
@@ -13,6 +14,7 @@
 
 Static landing site for the «ريال بريال / RiyalByRiyal» expense-and-budget Android app.
 
+- Official address: https://riyalbyriyal.app (www serves the same site).
 - Plain static files (HTML/CSS), no build step.
 - Deployed automatically by Cloudflare Pages: every push to `main` goes live within a minute or two.
 - Home page: `index.html` — privacy policy: `privacy/index.html`.
