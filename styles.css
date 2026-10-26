@@ -213,3 +213,11 @@ svg.tg{padding:0;margin-inline-start:0;border-radius:0;font-size:inherit}
 .btn-fb:hover{box-shadow:0 10px 24px rgba(24,119,242,.45)}
 .btn .fb{width:22px;height:22px}
 .foot .fb{width:20px;height:20px;color:#1877F2;background:#fff;border-radius:50%}
+
+/* Email (2026-10-26) */
+.ml{width:20px;height:20px;flex:none}
+.foot a.mail .ml{color:var(--gold2)}
+.foot a.mail bdi{font-weight:700;unicode-bidi:isolate}
+.mail-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin:18px 0 0;font-size:16px;color:rgba(255,255,255,.85)}
+.mail-line .ml{color:var(--gold2)}
+.mail-line a,.micro a.micro-mail{color:var(--gold2);font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
