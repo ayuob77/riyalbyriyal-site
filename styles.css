@@ -278,3 +278,11 @@ svg.tg{padding:0;margin-inline-start:0;border-radius:0;font-size:inherit}
 
 .brand span,.nav a{white-space:nowrap}
 @media (max-width:440px){.bar .brand{font-size:18px;gap:7px}.bar .brand img{width:30px;height:30px}.nav{gap:6px}.nav-ios{padding:6px 9px;font-size:13.5px}.nav .btn-sm{padding:7px 11px;font-size:13.5px}.wrap.bar{padding:0 14px}}
+
+/* iPhone how-to video (/iphone + /download card) */
+.video-sec{padding-bottom:0}
+.howto-vid{margin:0 auto;max-width:360px;width:100%;text-align:center}
+.howto-vid video{display:block;width:min(100%,calc(78vh * 9 / 16));height:auto;aspect-ratio:9/16;margin:0 auto;border-radius:18px;background:#0b1f17;box-shadow:0 10px 30px rgba(0,0,0,.18);object-fit:contain}
+.howto-vid figcaption{margin-top:10px;font-weight:800;font-size:17px;color:var(--g8)}
+.howto-vid.in-card{max-width:300px;margin-top:16px}
+.howto-vid.in-card figcaption{color:var(--gold2);font-size:16px}
