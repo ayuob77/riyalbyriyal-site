@@ -221,3 +221,60 @@ svg.tg{padding:0;margin-inline-start:0;border-radius:0;font-size:inherit}
 .mail-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin:18px 0 0;font-size:16px;color:rgba(255,255,255,.85)}
 .mail-line .ml{color:var(--gold2)}
 .mail-line a,.micro a.micro-mail{color:var(--gold2);font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+
+/* iPhone page + links (2026-10-28) */
+.nav{display:flex;align-items:center;gap:10px}
+.nav-ios{color:#fff;font-weight:800;font-size:15px;text-decoration:none;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.3);white-space:nowrap}
+.nav-ios:hover,.nav-ios.is-on{background:rgba(255,255,255,.14)}
+.btn .ap{width:22px;height:22px;margin-top:-3px}
+.btn-ios{background:#fff;color:#111;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.btn-ios:hover{box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.btn-ios2{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);box-shadow:none}
+.btn-ios2:hover{background:rgba(255,255,255,.2);box-shadow:none}
+.ios-hero .btn-ios{width:100%;max-width:420px}
+.ios-hero h1 .nobr{display:block;font-size:.55em;color:var(--gold2);margin-top:6px}
+.en{font-size:.85em;opacity:.8;font-family:-apple-system,"Segoe UI",sans-serif}
+.center{text-align:center;margin:26px 0 0}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.step{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.step figure{margin:0;flex:none;width:132px}
+.step img{width:100%;height:auto;border-radius:14px}
+.step .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold);color:var(--g9);font-weight:800;margin-bottom:6px}
+.step h3{font-size:18px;font-weight:800}
+.step p{margin:4px 0 0;color:var(--mut);font-size:15.5px;line-height:1.55}
+.step p.en{font-size:13.5px}
+.tips{margin-top:20px;display:grid;gap:10px}
+.tips p{margin:0;background:#FFF8E6;border:1px solid #F2D08A;color:#5B3A00;border-radius:14px;padding:12px 14px;font-size:15.5px}
+.why-box,.backup{background:var(--g1);border:1px solid #CDE8DD;border-radius:var(--r);padding:16px 18px;margin-top:18px}
+.why-box h3{font-size:19px;font-weight:800;color:var(--g8);margin-bottom:4px}
+.why-box p,.backup p{margin:6px 0 0;color:var(--ink);font-size:16px}
+.backup b:first-child{font-size:18px;color:var(--g8)}
+.mini-steps{margin:0 auto 10px;padding-inline-start:22px;max-width:30em;font-weight:700}
+.mini-steps li{margin:6px 0}
+.cmp{display:grid;gap:14px}
+.cmp-col{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.cmp-col h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.cmp-col ul{margin:0;padding-inline-start:20px}
+.cmp-col li{margin:5px 0;font-size:15.5px}
+.cmp-col.no{background:#FBFBFA}
+.cmp-col.no li{color:var(--mut)}
+.final .all-dl{margin-top:12px}
+.foot .ios-foot{font-weight:700}
+/* iPhone card on /download */
+.ios-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:var(--r);padding:18px;margin:0 auto;max-width:520px;text-align:center}
+.ios-card ol{text-align:right;margin:12px auto;padding-inline-start:22px;max-width:26em;color:rgba(255,255,255,.9);font-size:16px}
+.ios-card ol li{margin:5px 0}
+.ios-card .btn-ios{width:100%;max-width:380px}
+.ios-card .more{display:inline-block;margin-top:10px;color:var(--gold2);font-weight:700}
+.ios-card p{margin:8px 0 0;font-size:14px;color:rgba(255,255,255,.7)}
+@media (min-width:640px){.cmp{grid-template-columns:1fr 1fr}}
+@media (max-width:380px){.nav-ios{padding:6px 9px;font-size:14px}.nav .btn-sm{padding:7px 12px;font-size:14px}}
+
+.step{flex-direction:column;align-items:stretch;text-align:center}
+.step figure{width:min(230px,70vw);margin:0 auto}
+.step p.en{direction:ltr}
+.section bdi[dir=ltr],.ios-card bdi[dir=ltr]{white-space:nowrap}
+@media (min-width:640px){.step{flex-direction:row;align-items:center;text-align:start}.step figure{width:190px;margin:0}}
+
+.brand span,.nav a{white-space:nowrap}
+@media (max-width:440px){.bar .brand{font-size:18px;gap:7px}.bar .brand img{width:30px;height:30px}.nav{gap:6px}.nav-ios{padding:6px 9px;font-size:13.5px}.nav .btn-sm{padding:7px 11px;font-size:13.5px}.wrap.bar{padding:0 14px}}
