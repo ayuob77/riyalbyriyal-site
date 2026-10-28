@@ -1,8 +1,8 @@
-/* ريال بريال — service worker (iPhone / browser PWA). Version fa42e4e2fcbd */
-const VERSION = "fa42e4e2fcbd";
+/* ريال بريال — service worker (iPhone / browser PWA). Version 5d8a5a855e10 */
+const VERSION = "5d8a5a855e10";
 const CACHE = "rbr-" + VERSION;
 const RUNTIME = "rbr-runtime";
-const PRECACHE = ["./","assets/index-C61OoqjE.js","assets/index-CicMtfis.js","assets/index-Cl8_0d2T.js","assets/index-DcWaV4xD.css","assets/index-evarCuMd.js","assets/index-g4NKWb84.js","assets/index-pY0MXCOy.js","assets/web-BnpvZb9J.js","assets/web-CKcSXufA.js","assets/web-CNb37sal.js","assets/web-Cs7E6qNs.js","assets/web-DOK6cgdo.js","assets/web-DWbtRHMa.js","assets/web-rdBJguFd.js","fonts/tajawal-400-arabic.woff2","fonts/tajawal-400-latin.woff2","fonts/tajawal-500-arabic.woff2","fonts/tajawal-500-latin.woff2","fonts/tajawal-700-arabic.woff2","fonts/tajawal-700-latin.woff2","fonts/tajawal-800-arabic.woff2","fonts/tajawal-800-latin.woff2","icons/icon-120.png","icons/icon-152.png","icons/icon-167.png","icons/icon-180.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","logo.svg","manifest.webmanifest"];
+const PRECACHE = ["./","assets/index-B7UmG3s0.js","assets/index-BewFhRCd.js","assets/index-CUxTrEMP.js","assets/index-D-aVTS_V.js","assets/index-DHuX8Ia8.js","assets/index-DXTK_cIw.js","assets/index-DcWaV4xD.css","assets/web-B2pw6Yqy.js","assets/web-Bdy0xZAH.js","assets/web-D9cKSoXN.js","assets/web-DfGPN8bx.js","assets/web-Dik4L6N0.js","assets/web-DxiQpPqf.js","assets/web-tDdpe9UQ.js","fonts/tajawal-400-arabic.woff2","fonts/tajawal-400-latin.woff2","fonts/tajawal-500-arabic.woff2","fonts/tajawal-500-latin.woff2","fonts/tajawal-700-arabic.woff2","fonts/tajawal-700-latin.woff2","fonts/tajawal-800-arabic.woff2","fonts/tajawal-800-latin.woff2","icons/icon-120.png","icons/icon-152.png","icons/icon-167.png","icons/icon-180.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","logo.svg","manifest.webmanifest"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil((async () => {
