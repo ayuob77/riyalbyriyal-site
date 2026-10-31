@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="light">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ريال بريال على الآيفون — بدون App Store</title>
 <meta name="description" content="استخدم ريال بريال على الآيفون من Safari مباشرة: افتح الرابط، اضغط زر المشاركة، ثم «إضافة إلى الشاشة الرئيسية». بدون App Store.">
-<meta name="theme-color" content="#053B2D">
+<meta name="theme-color" content="#fafafa">
+<meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ريال بريال على الآيفون — بدون App Store">
 <meta property="og:description" content="3 خطوات من Safari وتصير عندك أيقونة ريال بريال على شاشة الآيفون.">
@@ -15,150 +16,198 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/fonts/tajawal-800-arabic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css?v=8">
+<script>/* Apply the saved or system theme before first paint (no flash) */(function(){try{var t=localStorage.getItem("rbr_site_theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script>
+<link rel="preload" href="/fonts/cairo-arabic-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css?v=20261031">
+<script src="/theme.js?v=20261031" defer></script>
 </head>
 <body data-evt-src="site" data-evt-visit="ios_visit">
 <a class="skip" href="#main">تخطَّ إلى المحتوى</a>
-<header class="top">
-  <div class="wrap bar">
-    <a class="brand" href="/" aria-label="ريال بريال — الرئيسية"><img src="/logo.svg" alt="" width="36" height="36"><span>ريال بريال</span></a>
-    <nav class="nav"><a class="nav-ios is-on" href="/iphone" aria-current="page">🍎 للآيفون</a><a class="btn btn-sm" href="/download">أندرويد</a></nav>
+<!-- Header: glass, sticky -->
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="/" aria-label="ريال بريال — الرئيسية"><img src="/logo.svg" alt="" width="34" height="34"><span>ريال بريال</span></a>
+    <nav class="nav" aria-label="القائمة الرئيسية"><a href="/#features">المميزات</a><a href="/#new">الجديد</a><a href="/#pricing">الأسعار</a><a href="/#faq">الأسئلة</a><a href="/download">التحميل</a><a href="/iphone" aria-current="page">للآيفون</a></nav>
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="التبديل إلى الوضع الليلي" aria-pressed="false"><svg class="ic i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg><svg class="ic i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/> <path d="M12 2v2"/> <path d="M12 20v2"/> <path d="m4.93 4.93 1.41 1.41"/> <path d="m17.66 17.66 1.41 1.41"/> <path d="M2 12h2"/> <path d="M20 12h2"/> <path d="m6.34 17.66-1.41 1.41"/> <path d="m19.07 4.93-1.41 1.41"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="https://github.com/ayuob77/riyalbyriyal-app/releases/download/v2.1.1/riyalbyriyal-v2.1.1.apk" download><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/> <path d="m7 10 5 5 5-5"/></svg><span>حمّل التطبيق</span></a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu"><svg class="ic i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/> <path d="M4 12h16"/> <path d="M4 19h16"/></svg><svg class="ic i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/> <path d="m6 6 12 12"/></svg></button>
+    </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="قائمة الجوال"><a class="link" href="/#features"><span>المميزات</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a><a class="link" href="/#new"><span>الجديد</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a><a class="link" href="/#pricing"><span>الأسعار</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a><a class="link" href="/#faq"><span>الأسئلة</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a><a class="link" href="/download"><span>التحميل</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a><a class="link" href="/iphone" aria-current="page"><span>للآيفون</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a></nav>
+  <div class="actions">
+    <a class="btn btn-primary btn-lg btn-block" href="https://github.com/ayuob77/riyalbyriyal-app/releases/download/v2.1.1/riyalbyriyal-v2.1.1.apk" download><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/> <path d="m7 10 5 5 5-5"/></svg>تحميل الملف APK</a>
+    <a class="btn btn-secondary btn-lg btn-block" href="/iphone"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z"/></svg>للآيفون</a>
+  </div>
+</div>
 <main id="main">
-<section class="hero dlp ios-hero">
-  <div class="wrap dlp-in">
-    <span class="badge"><span class="dot"></span>جديد: يشتغل على الآيفون</span>
-    <h1>ريال بريال على الآيفون <span class="nobr">بدون App Store</span></h1>
-    <p class="lead">افتح الرابط في Safari وأضفه للشاشة الرئيسية، وتصير عندك أيقونة ريال بريال مثل أي تطبيق.<br><span class="en" dir="ltr">Riyal by Riyal on iPhone — no App Store needed.</span></p>
-    <a class="btn btn-lg btn-ios" href="https://riyalbyriyal.app/app/"><svg viewBox="0 0 24 24" aria-hidden="true" class="ap"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1.1-3.2-1 .1-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>افتح نسخة الآيفون</a>
-    <p class="micro dl-note">افتحه من <b>Safari</b> · مجاني مع تجربة برو 7 أيام · نفس مميزات أندرويد تقريباً</p>
+<section class="hero ios-hero">
+  <div class="container page-hero">
+    <span class="pill"><span class="dot"></span>جديد: يشتغل على الآيفون</span>
+    <h1 class="h1">ريال بريال على الآيفون <span class="nobr">بدون App Store</span></h1>
+    <p class="lead">افتح الرابط في Safari وأضفه للشاشة الرئيسية، وتصير عندك أيقونة ريال بريال مثل أي تطبيق.<br><span class="en en-center" dir="ltr">Riyal by Riyal on iPhone — no App Store needed.</span></p>
+    <div class="hero-cta"><a class="btn btn-primary btn-lg btn-ios" href="https://riyalbyriyal.app/app/"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z"/></svg>افتح نسخة الآيفون</a></div>
+    <p class="hero-meta dl-note">افتحه من <b>Safari</b> · مجاني مع تجربة برو 7 أيام · نفس مميزات أندرويد تقريباً</p>
   </div>
 </section>
 
-<section id="video" class="section video-sec">
-  <div class="wrap narrow">
-    <figure class="howto-vid">
+<section id="video" class="section video-sec pt-0">
+  <div class="container">
+    <figure class="video howto-vid">
       <video controls playsinline preload="metadata" poster="/iphone/media/rbr-iphone-howto-poster.jpg" width="360" height="640" aria-label="فيديو طريقة تثبيت ريال بريال على الآيفون">
         <source src="/iphone/media/rbr-iphone-howto.mp4" type="video/mp4">
         <a href="/iphone/media/rbr-iphone-howto.mp4">شغّل الفيديو</a>
       </video>
-      <figcaption>🎬 شوف الطريقة بالفيديو (42 ثانية)</figcaption>
+      <figcaption><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/> <circle cx="12" cy="12" r="10"/></svg>شوف الطريقة بالفيديو (42 ثانية)</figcaption>
     </figure>
   </div>
 </section>
 
-<section id="install" class="section">
-  <div class="wrap narrow">
-    <h2>التثبيت في 3 خطوات</h2>
-    <p class="sub">افتح <a href="https://riyalbyriyal.app/app/"><bdi dir="ltr">riyalbyriyal.app/app</bdi></a> في <b>Safari</b> على الآيفون، وبعدين:</p>
-    <ol class="steps">
-      <li class="step"><figure><img src="/iphone/img/step1.webp" width="240" height="480" loading="lazy" decoding="async" alt="Safari على الآيفون وزر المشاركة تحت مضاء"></figure><div><b class="n">1</b><h3>اضغط زر المشاركة ⬆️</h3><p>في iOS 26: زر <b>⋯</b> ثم «مشاركة».</p><p class="en" dir="ltr">Tap Share ⬆️ (iOS 26: ⋯ then Share).</p></div></li>
-      <li class="step"><figure><img src="/iphone/img/step2.webp" width="240" height="480" loading="lazy" decoding="async" alt="قائمة المشاركة وفيها «إضافة إلى الشاشة الرئيسية»"></figure><div><b class="n">2</b><h3>اختر «إضافة إلى الشاشة الرئيسية»</h3><p>لو ما شفته، انزل تحت في القائمة.</p><p class="en" dir="ltr">Choose “Add to Home Screen”.</p></div></li>
-      <li class="step"><figure><img src="/iphone/img/step3.webp" width="240" height="480" loading="lazy" decoding="async" alt="شاشة التأكيد باسم ريال بريال وزر «إضافة»"></figure><div><b class="n">3</b><h3>اضغط «إضافة»</h3><p>الاسم يطلع «ريال بريال» مع الأيقونة.</p><p class="en" dir="ltr">Tap “Add”.</p></div></li>
-      <li class="step"><figure><img src="/iphone/img/step4.webp" width="240" height="480" loading="lazy" decoding="async" alt="أيقونة ريال بريال على الشاشة الرئيسية للآيفون"></figure><div><b class="n">✓</b><h3>افتحه من الأيقونة</h3><p>الأيقونة تطلع على الشاشة الرئيسية. من الحين افتح ريال بريال منها دايماً.</p></div></li>
+<section id="install" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">التثبيت</span>
+      <h2 class="h2">التثبيت في 3 خطوات</h2>
+      <p class="lead">افتح <a class="text-link" href="https://riyalbyriyal.app/app/"><bdi dir="ltr">riyalbyriyal.app/app</bdi></a> في <b>Safari</b> على الآيفون، وبعدين:</p>
+    </div>
+    <ol class="steps-cards steps-wide">
+<li class="step-card"><figure><img src="/iphone/img/step1.webp" width="240" height="480" loading="lazy" decoding="async" alt="Safari على الآيفون وزر المشاركة تحت مضاء"></figure><div><span class="num">1</span><h3>اضغط زر المشاركة ⬆️</h3><p>في iOS 26: زر <b>⋯</b> ثم «مشاركة».</p><p class="en" dir="ltr">Tap Share ⬆️ (iOS 26: ⋯ then Share).</p></div></li>
+<li class="step-card"><figure><img src="/iphone/img/step2.webp" width="240" height="480" loading="lazy" decoding="async" alt="قائمة المشاركة وفيها «إضافة إلى الشاشة الرئيسية»"></figure><div><span class="num">2</span><h3>اختر «إضافة إلى الشاشة الرئيسية»</h3><p>لو ما شفته، انزل تحت في القائمة.</p><p class="en" dir="ltr">Choose “Add to Home Screen”.</p></div></li>
+<li class="step-card"><figure><img src="/iphone/img/step3.webp" width="240" height="480" loading="lazy" decoding="async" alt="شاشة التأكيد باسم ريال بريال وزر «إضافة»"></figure><div><span class="num">3</span><h3>اضغط «إضافة»</h3><p>الاسم يطلع «ريال بريال» مع الأيقونة.</p><p class="en" dir="ltr">Tap “Add”.</p></div></li>
+<li class="step-card"><figure><img src="/iphone/img/step4.webp" width="240" height="480" loading="lazy" decoding="async" alt="أيقونة ريال بريال على الشاشة الرئيسية للآيفون"></figure><div><span class="num"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h3>افتحه من الأيقونة</h3><p>الأيقونة تطلع على الشاشة الرئيسية. من الحين افتح ريال بريال منها دايماً.</p></div></li>
     </ol>
-    <div class="tips">
-      <p>⚠️ <b>لازم Safari:</b> متصفح تلجرام أو واتساب أو فيسبوك الداخلي ما يقدر يضيف للشاشة الرئيسية. اضغط ⋯ واختر «فتح في Safari».</p>
-      <p>💡 <b>ثبّت أول، وبعدين استخدم:</b> اللي تدخله في تبويب Safari ما ينتقل للأيقونة، فابدأ تسجيل وإدخال من الأيقونة.</p>
+    <div class="callouts narrow">
+      <p class="callout"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/> <path d="M12 9v4"/> <path d="M12 17h.01"/></svg><span><b>لازم Safari:</b> متصفح تلجرام أو واتساب أو فيسبوك الداخلي ما يقدر يضيف للشاشة الرئيسية. اضغط ⋯ واختر «فتح في Safari».</span></p>
+      <p class="callout accent"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/> <path d="M9 18h6"/> <path d="M10 22h4"/></svg><span><b>ثبّت أول، وبعدين استخدم:</b> اللي تدخله في تبويب Safari ما ينتقل للأيقونة، فابدأ تسجيل وإدخال من الأيقونة.</span></p>
     </div>
-    <p class="center"><a class="btn btn-lg btn-ios" href="https://riyalbyriyal.app/app/"><svg viewBox="0 0 24 24" aria-hidden="true" class="ap"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1.1-3.2-1 .1-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>افتح نسخة الآيفون</a></p>
+    <p class="center mt-24"><a class="btn btn-primary btn-lg btn-ios" href="https://riyalbyriyal.app/app/"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z"/></svg>افتح نسخة الآيفون</a></p>
   </div>
 </section>
 
-<section id="signin" class="section alt">
-  <div class="wrap narrow">
-    <h2>الدخول بالإيميل ورمز</h2>
-    <p class="sub">بدون كلمة مرور. أي إيميل ينفع: iCloud أو Gmail أو Outlook أو Yahoo…</p>
-    <ul class="checks">
-      <li>اكتب إيميلك، ويوصلك رمز من 6 أرقام من <bdi dir="ltr">no-reply@riyalbyriyal.app</bdi></li>
-      <li>الرمز صالح 10 دقائق. ما وصل؟ شوف مجلد البريد غير المهم (Junk).</li>
-    </ul>
-    <div class="why-box">
-      <h3>ليش الإيميل؟</h3>
-      <p>اشتراك برو وتجربة الـ 7 أيام المجانية (مرة وحدة لكل إيميل) مربوطة بإيميلك. لو حذفت الأيقونة أو غيّرت جوالك، سجّل دخول بنفس الإيميل ويرجع لك برو.</p>
-      <p>أما قيودك نفسها فتبقى على جوالك — عشان كذا خذ نسخة احتياطية (تحت).</p>
+<section id="signin" class="section">
+  <div class="container narrow">
+    <div class="section-head">
+      <h2 class="h2">الدخول بالإيميل ورمز</h2>
+      <p class="lead">بدون كلمة مرور. أي إيميل ينفع: iCloud أو Gmail أو Outlook أو Yahoo…</p>
+    </div>
+    <div class="panel">
+      <ul class="checklist">
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>اكتب إيميلك، ويوصلك رمز من 6 أرقام من <bdi dir="ltr">no-reply@riyalbyriyal.app</bdi></span></li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>الرمز صالح 10 دقائق. ما وصل؟ شوف مجلد البريد غير المهم (Junk).</span></li>
+      </ul>
+      <hr class="divider">
+      <div class="why-box">
+        <h3 class="h3">ليش الإيميل؟</h3>
+        <p class="body mt-6">اشتراك برو وتجربة الـ 7 أيام المجانية (مرة وحدة لكل إيميل) مربوطة بإيميلك. لو حذفت الأيقونة أو غيّرت جوالك، سجّل دخول بنفس الإيميل ويرجع لك برو.</p>
+        <p class="body mt-6">أما قيودك نفسها فتبقى على جوالك — عشان كذا خذ نسخة احتياطية (تحت).</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="pro" class="section">
-  <div class="wrap narrow">
-    <h2>برو على الآيفون</h2>
-    <p class="sub">نفس مفاتيح التفعيل حق أندرويد، من بوت تلجرام.</p>
+<section id="pro" class="section section-alt">
+  <div class="container narrow">
+    <div class="section-head">
+      <h2 class="h2">برو على الآيفون</h2>
+      <p class="lead">نفس مفاتيح التفعيل حق أندرويد، من بوت تلجرام.</p>
+    </div>
     <ol class="mini-steps">
-      <li>خذ مفتاحك من البوت <a href="https://t.me/riyalbyriyal_bot" target="_blank" rel="noopener"><bdi dir="ltr">@riyalbyriyal_bot</bdi></a></li>
-      <li>سجّل دخول بالإيميل أول</li>
-      <li>الصق المفتاح في «التفعيل»</li>
+      <li><span>خذ مفتاحك من البوت <a href="https://t.me/riyalbyriyal_bot" target="_blank" rel="noopener"><bdi dir="ltr">@riyalbyriyal_bot</bdi></a></span></li>
+      <li><span>سجّل دخول بالإيميل أول</span></li>
+      <li><span>الصق المفتاح في «التفعيل»</span></li>
     </ol>
-    <ul class="checks">
-      <li>المفتاح يشتغل على جهازين بحد أقصى بنفس الإيميل.</li>
-      <li>عندك مفتاح أندرويد مربوط بحساب Google؟ انقله من البوت بزر «🔁 نقل المفتاح لجهاز/حساب جديد».</li>
-      <li>غيّرت الجوال أو حذفت الأيقونة؟ سجّل دخول بنفس الإيميل ويرجع برو.</li>
+    <ul class="checklist">
+      <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>المفتاح يشتغل على جهازين بحد أقصى بنفس الإيميل.</span></li>
+      <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>عندك مفتاح أندرويد مربوط بحساب Google؟ انقله من البوت بزر «🔁 نقل المفتاح لجهاز/حساب جديد».</span></li>
+      <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>غيّرت الجوال أو حذفت الأيقونة؟ سجّل دخول بنفس الإيميل ويرجع برو.</span></li>
     </ul>
-    <p class="center"><a class="btn btn-lg btn-tg" href="https://t.me/riyalbyriyal_bot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" class="tg"><path fill="currentColor" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2l-11 6.9-4.7-1.5c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.6.2 1.3 1.3z"/></svg>بوت التفعيل</a></p>
+    <p class="center mt-24"><a class="btn btn-secondary btn-lg" href="https://t.me/riyalbyriyal_bot" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M228.88,26.19a9,9,0,0,0-9.16-1.57L17.06,103.93a14.22,14.22,0,0,0,2.43,27.21L72,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L165,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L231.77,35A9,9,0,0,0,228.88,26.19ZM175.53,208,92.85,135.5l119-85.29Z"/></svg>بوت التفعيل</a></p>
   </div>
 </section>
 
-<section id="works" class="section alt">
-  <div class="wrap narrow">
-    <h2>وش يشتغل على الآيفون؟</h2>
-    <div class="cmp">
-      <div class="cmp-col yes"><h3>✅ يشتغل</h3><ul>
-        <li>المصاريف والدخل</li>
-        <li>الديون + كشف حساب PDF</li>
-        <li>التقارير + تصدير PDF و Excel (CSV)</li>
-        <li>مسح الدفتر بالكاميرا (كاميرا أو صورة)</li>
-        <li>الميزانيات والأهداف والجمعيات</li>
-        <li>عربي و English</li>
-        <li>بدون إنترنت بعد أول فتح</li>
+<section id="works" class="section">
+  <div class="container narrow">
+    <div class="section-head"><h2 class="h2">وش يشتغل على الآيفون؟</h2></div>
+    <div class="compare">
+      <div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <path d="m16 9-5.5 5.5L8 12"/></svg>يشتغل</h3><ul class="checklist">
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>المصاريف والدخل</li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>الديون + كشف حساب PDF</li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>التقارير + تصدير PDF و Excel (CSV)</li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>مسح الدفتر بالكاميرا (كاميرا أو صورة)</li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>الميزانيات والأهداف والجمعيات</li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>عربي و English</li>
+        <li><span class="ck"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>بدون إنترنت بعد أول فتح</li>
       </ul></div>
-      <div class="cmp-col no"><h3>⛔ مو موجود في نسخة الآيفون</h3><ul>
-        <li>الإشعارات والتذكيرات</li>
-        <li>النسخ الاحتياطي التلقائي على Google Drive</li>
-        <li>الودجت (Widgets)</li>
-        <li>الدخول بحساب Google</li>
-        <li>الإدخال بالصوت: بس إذا Safari يدعم التعرف على الكلام، وإلا اكتب</li>
+      <div class="panel"><h3><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <path d="M8 12h8"/></svg>مو موجود في نسخة الآيفون</h3><ul class="checklist">
+        <li><span class="ck no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/> <path d="m6 6 12 12"/></svg></span>الإشعارات والتذكيرات</li>
+        <li><span class="ck no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/> <path d="m6 6 12 12"/></svg></span>النسخ الاحتياطي التلقائي على Google Drive</li>
+        <li><span class="ck no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/> <path d="m6 6 12 12"/></svg></span>الودجت (Widgets)</li>
+        <li><span class="ck no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/> <path d="m6 6 12 12"/></svg></span>الدخول بحساب Google</li>
+        <li><span class="ck no"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/> <path d="m6 6 12 12"/></svg></span>الإدخال بالصوت: بس إذا Safari يدعم التعرف على الكلام، وإلا اكتب</li>
       </ul></div>
     </div>
-    <div class="backup">
-      <b>💾 لا تنسى النسخة الاحتياطية</b>
-      <p>بياناتك على جوالك. من <b>الإعدادات ← النسخ الاحتياطي ← «نسخة احتياطية (ملف)»</b> احفظ ملف عندك بين فترة وفترة. نفس الملف يرجّع بياناتك حتى في تطبيق أندرويد.</p>
+    <div class="callout accent mt-24 backup"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v8"/> <path d="m16 6-4 4-4-4"/> <rect width="20" height="8" x="2" y="14" rx="2"/> <path d="M6 18h.01"/> <path d="M10 18h.01"/></svg><div><b>لا تنسى النسخة الاحتياطية</b><p class="mt-4">بياناتك على جوالك. من <b>الإعدادات ← النسخ الاحتياطي ← «نسخة احتياطية (ملف)»</b> احفظ ملف عندك بين فترة وفترة. نفس الملف يرجّع بياناتك حتى في تطبيق أندرويد.</p></div></div>
+  </div>
+</section>
+
+<section id="faq" class="section section-alt">
+  <div class="container">
+    <div class="section-head"><h2 class="h2">أسئلة شائعة</h2></div>
+    <div class="faq">
+<details><summary><span>ليش مو موجود في App Store؟</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>النشر في App Store يحتاج حساب مطوّر مدفوع من Apple. عشان كذا سوينا نسخة ويب تتثبت من Safari بأيقونة على الشاشة الرئيسية، وبنفس كود تطبيق أندرويد.</p></details>
+<details><summary><span>هل هو آمن؟ وين تنحفظ بياناتي؟</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>قيودك تنحفظ على جوالك. اللي مربوط بإيميلك هو اشتراك برو والتجربة المجانية بس. خذ «نسخة احتياطية (ملف)» من الإعدادات ← النسخ الاحتياطي واحفظها عندك.</p></details>
+<details><summary><span>ما لقيت «إضافة إلى الشاشة الرئيسية»</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>تأكد إنك فاتح الرابط في Safari (مو داخل تلجرام أو واتساب أو فيسبوك). في قائمة المشاركة انزل تحت. في iOS 26 اضغط زر ⋯ أول ثم «مشاركة».</p></details>
+<details><summary><span>سجّلت في Safari وبعد ما ثبّت ما لقيت بياناتي</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>اللي تدخله في تبويب Safari ما ينتقل للأيقونة. ثبّت أول، وبعدين افتحه من الأيقونة وسجّل دخول واستخدمه منها.</p></details>
+<details><summary><span>الرمز ما وصلني</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>شوف مجلد Junk (البريد غير المهم) وتأكد من الإيميل. الرمز يجي من <bdi dir="ltr">no-reply@riyalbyriyal.app</bdi> وصالح 10 دقائق.</p></details>
+<details><summary><span>عندي برو على أندرويد، يشتغل على الآيفون؟</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>نفس المفاتيح. سجّل دخول بالإيميل والصق المفتاح في «التفعيل». المفتاح يشتغل على جهازين بنفس الإيميل. لو مفتاحك مربوط بحساب Google انقله من البوت بزر «🔁 نقل المفتاح لجهاز/حساب جديد».</p></details>
+<details><summary><span>يشتغل بدون إنترنت؟</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p>إيه، بعد أول فتح يشتغل بدون إنترنت. الدخول ومسح الدفتر بالكاميرا يحتاجون إنترنت.</p></details>
     </div>
   </div>
 </section>
 
-<section id="faq" class="section">
-  <div class="wrap narrow">
-    <h2>أسئلة شائعة</h2>
-    <details><summary>ليش مو موجود في App Store؟</summary><p>النشر في App Store يحتاج حساب مطوّر مدفوع من Apple. عشان كذا سوينا نسخة ويب تتثبت من Safari بأيقونة على الشاشة الرئيسية، وبنفس كود تطبيق أندرويد.</p></details>
-    <details><summary>هل هو آمن؟ وين تنحفظ بياناتي؟</summary><p>قيودك تنحفظ على جوالك. اللي مربوط بإيميلك هو اشتراك برو والتجربة المجانية بس. خذ «نسخة احتياطية (ملف)» من الإعدادات ← النسخ الاحتياطي واحفظها عندك.</p></details>
-    <details><summary>ما لقيت «إضافة إلى الشاشة الرئيسية»</summary><p>تأكد إنك فاتح الرابط في Safari (مو داخل تلجرام أو واتساب أو فيسبوك). في قائمة المشاركة انزل تحت. في iOS 26 اضغط زر ⋯ أول ثم «مشاركة».</p></details>
-    <details><summary>سجّلت في Safari وبعد ما ثبّت ما لقيت بياناتي</summary><p>اللي تدخله في تبويب Safari ما ينتقل للأيقونة. ثبّت أول، وبعدين افتحه من الأيقونة وسجّل دخول واستخدمه منها.</p></details>
-    <details><summary>الرمز ما وصلني</summary><p>شوف مجلد Junk (البريد غير المهم) وتأكد من الإيميل. الرمز يجي من <bdi dir="ltr">no-reply@riyalbyriyal.app</bdi> وصالح 10 دقائق.</p></details>
-    <details><summary>عندي برو على أندرويد، يشتغل على الآيفون؟</summary><p>نفس المفاتيح. سجّل دخول بالإيميل والصق المفتاح في «التفعيل». المفتاح يشتغل على جهازين بنفس الإيميل. لو مفتاحك مربوط بحساب Google انقله من البوت بزر «🔁 نقل المفتاح لجهاز/حساب جديد».</p></details>
-    <details><summary>يشتغل بدون إنترنت؟</summary><p>إيه، بعد أول فتح يشتغل بدون إنترنت. الدخول ومسح الدفتر بالكاميرا يحتاجون إنترنت.</p></details>
-  </div>
-</section>
-
-<section class="final">
-  <div class="wrap final-in">
-    <h2>جاهز؟</h2>
-    <p>افتحه في Safari وأضفه للشاشة الرئيسية.</p>
-    <a class="btn btn-lg btn-ios" href="https://riyalbyriyal.app/app/"><svg viewBox="0 0 24 24" aria-hidden="true" class="ap"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1.1-3.2-1 .1-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>افتح نسخة الآيفون</a>
-    <a class="all-dl" href="/download">عندك أندرويد؟ كل طرق التحميل ←</a>
+<section class="section">
+  <div class="container">
+    <div class="cta-panel">
+      <img class="logo-lg" src="/logo.svg" alt="" width="56" height="56">
+      <h2 class="h2">جاهز؟</h2>
+      <p class="lead">افتحه في Safari وأضفه للشاشة الرئيسية.</p>
+      <div class="cta-actions"><a class="btn btn-primary btn-lg btn-ios" href="https://riyalbyriyal.app/app/"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z"/></svg>افتح نسخة الآيفون</a></div>
+      <p class="mt-24"><a class="text-link all-dl" href="/download">عندك أندرويد؟ كل طرق التحميل <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/> <path d="M19 12H5"/></svg></a></p>
+    </div>
   </div>
 </section>
 </main>
-<footer class="foot">
-  <div class="wrap foot-in">
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="/" aria-label="ريال بريال — الرئيسية"><img src="/logo.svg" alt="" width="34" height="34"><span>ريال بريال</span></a>
+      <p class="about">تطبيق عربي لإدارة مصاريفك وديونك بعملة بلدك، ويعمل بدون إنترنت.</p>
+    </div>
+    <div class="footer-col">
+      <h4>التطبيق</h4>
+      <ul>
+        <li><a href="https://github.com/ayuob77/riyalbyriyal-app/releases/download/v2.1.1/riyalbyriyal-v2.1.1.apk" download><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M207.06,80.67c-.74-.74-1.49-1.46-2.24-2.17l24.84-24.84a8,8,0,0,0-11.32-11.32l-26,26a111.43,111.43,0,0,0-128.55.19L37.66,42.34A8,8,0,0,0,26.34,53.66L51.4,78.72A113.38,113.38,0,0,0,16,161.13V184a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V160A111.25,111.25,0,0,0,207.06,80.67ZM92,160a12,12,0,1,1,12-12A12,12,0,0,1,92,160Zm72,0a12,12,0,1,1,12-12A12,12,0,0,1,164,160Z"/></svg><span>تحميل الملف APK</span></a></li>
+        <li><a class="ios-foot" href="/iphone"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128.23,30A40,40,0,0,1,167,0h1a8,8,0,0,1,0,16h-1a24,24,0,0,0-23.24,18,8,8,0,1,1-15.5-4ZM223.3,169.59a8.07,8.07,0,0,0-2.8-3.4C203.53,154.53,200,134.64,200,120c0-17.67,13.47-33.06,21.5-40.67a8,8,0,0,0,0-11.62C208.82,55.74,187.82,48,168,48a72.23,72.23,0,0,0-40,12.13,71.56,71.56,0,0,0-90.71,9.09A74.63,74.63,0,0,0,16,123.4a127,127,0,0,0,40.14,89.73A39.8,39.8,0,0,0,83.59,224h87.68a39.84,39.84,0,0,0,29.12-12.57,125,125,0,0,0,17.82-24.6C225.23,174,224.33,172,223.3,169.59Z"/></svg><span>ريال بريال للآيفون</span></a></li>
+        <li><a href="/download"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/> <path d="m7 10 5 5 5-5"/></svg><span>كل طرق التحميل</span></a></li>
+        <li><a href="/privacy/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/> <path d="m9 12 2 2 4-4"/></svg><span>سياسة الخصوصية</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li><a href="https://whatsapp.com/channel/0029VbDu9QYICVfv3pd2dY2x/111" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"/></svg><span>تواصل معنا على واتساب</span></a></li>
+        <li><a href="https://t.me/riyalbyriyal_bot" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M228.88,26.19a9,9,0,0,0-9.16-1.57L17.06,103.93a14.22,14.22,0,0,0,2.43,27.21L72,141.45V200a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L165,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L231.77,35A9,9,0,0,0,228.88,26.19ZM175.53,208,92.85,135.5l119-85.29Z"/></svg><span>بوت تلجرام</span></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61595923169592" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"/></svg><span>صفحتنا على فيسبوك</span></a></li>
+        <li><a class="mail" href="mailto:contact@riyalbyriyal.app"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/> <rect x="2" y="4" width="20" height="16" rx="2"/></svg><span>للتواصل والاستفسار: <bdi dir="ltr">contact@riyalbyriyal.app</bdi></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
     <span>© 2026 ريال بريال</span>
-    <a class="ios-foot" href="/iphone">🍎 <span>ريال بريال للآيفون</span></a>
-    <a href="https://whatsapp.com/channel/0029VbDu9QYICVfv3pd2dY2x/111" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" class="wa"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg><span>تواصل معنا على واتساب</span></a>
-    <a href="https://t.me/riyalbyriyal_bot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" class="tg"><path fill="currentColor" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2l-11 6.9-4.7-1.5c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.6.2 1.3 1.3z"/></svg><span>بوت تلجرام</span></a>
-    <a href="https://www.facebook.com/profile.php?id=61595923169592" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" class="fb"><path fill="currentColor" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg><span>صفحتنا على فيسبوك</span></a>
-    <a class="mail" href="mailto:contact@riyalbyriyal.app"><svg viewBox="0 0 24 24" aria-hidden="true" class="ml"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.3-8-5.3zM5.6 7l6.4 4.2L18.4 7H5.6z"/></svg><span>للتواصل والاستفسار: <bdi dir="ltr">contact@riyalbyriyal.app</bdi></span></a>
+    <span dir="ltr">riyalbyriyal.app</span>
   </div>
 </footer>
 <script src="/evt.js?v=1" defer></script>
